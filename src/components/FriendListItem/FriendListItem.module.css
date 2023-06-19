@@ -5,6 +5,7 @@
 
   padding: 10px;
   border: 1px solid #ccc;
+  background-color: white;
   border-radius: 4px;
 
   width: 200px;
@@ -13,22 +14,21 @@
   margin-top: 10px;
 }
 
-.statusGreen {
+.status {
   display: inline-block;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: green;
+
   margin-right: 10px;
 }
 
-.statusRed {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
+.green {
+  background-color: green;
+}
+
+.red {
   background-color: red;
-  margin-right: 10px;
 }
 
 .avatar {

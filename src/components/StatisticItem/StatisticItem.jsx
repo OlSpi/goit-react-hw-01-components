@@ -1,4 +1,5 @@
 import css from './StatisticItem.module.css';
+import PropTypes from 'prop-types';
 
 export const StatisticItem = ({ label, percentage, color }) => {
   const itemStyle = {
@@ -12,4 +13,10 @@ export const StatisticItem = ({ label, percentage, color }) => {
       </li>
     </>
   );
+};
+
+StatisticItem.propTypes = {
+  label: PropTypes.string.isRequired,
+  percentage: PropTypes.number.isRequired,
+  color: PropTypes.string.isRequired,
 };

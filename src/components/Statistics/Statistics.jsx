@@ -1,5 +1,6 @@
 import { StatisticItem } from '../StatisticItem/StatisticItem';
 import css from './Satistics.module.css';
+import PropTypes from 'prop-types';
 
 function generateRandomColor() {
   const letters = '0123456789ABCDEF';
@@ -34,4 +35,8 @@ export const Statistics = ({ data }) => {
       </section>
     </>
   );
+};
+
+Statistics.propTypes = {
+  data: PropTypes.array,
 };
