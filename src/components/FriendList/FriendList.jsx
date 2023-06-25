@@ -1,5 +1,7 @@
 import { FriendListItem } from 'components/FriendListItem/FriendListItem';
 import css from './FriendList.module.css';
+import PropTypes from 'prop-types';
+import { Profile } from 'components/Profile/Profile';
 
 export const FriendList = ({ friends }) => {
   return (
@@ -18,4 +20,8 @@ export const FriendList = ({ friends }) => {
       </ul>
     </div>
   );
+};
+
+Profile.propTypes = {
+  friends: PropTypes.array,
 };
